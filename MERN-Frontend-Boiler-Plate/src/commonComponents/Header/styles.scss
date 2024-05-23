@@ -98,7 +98,7 @@
 }
 
 .notification-drawer {
-    min-width: 300px;
+    width: clamp(280px, 40%, 500px);
 
     .ant-drawer-body {
         padding: rem(20);
