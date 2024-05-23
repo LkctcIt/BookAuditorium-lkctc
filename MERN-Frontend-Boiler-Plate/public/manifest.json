@@ -1,0 +1,18 @@
+{
+    "short_name": "Book Auditorium",
+    "name": "Create Book Auditorium Sample",
+    "icons": [
+        {
+            "src": "myLogo.ico",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "myLogo.png",
+            "type": "image/png"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

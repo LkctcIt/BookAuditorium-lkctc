@@ -1,0 +1,158 @@
+@import "../../globalStyles/main.scss";
+@import "../../globalStyles/color.scss";
+
+.header-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: rem(16) rem(24);
+    width: 100%;
+
+    .logo-wrapper {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        gap: rem(10);
+
+        img {
+            width: rem(60);
+        }
+
+        article {
+            color: $title-color;
+            font-size: rem(18);
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+    .menu-container {
+        .profie-wrapper {
+            align-items: center;
+            display: flex;
+            gap: rem(14);
+
+            & .ant-divider {
+                border-color: $muted;
+                height: 20px;
+                margin: 0;
+            }
+
+            & .user-profile {
+                display: flex;
+                align-items: center;
+
+                .ant-avatar {
+                    background-color: $primary;
+
+                    span {
+                        font-size: rem(20);
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            & .custom-btn {
+                border-radius: rem(12);
+                padding: rem(6);
+                aspect-ratio: 1;
+            }
+
+            & .notification {
+                rotate: 45deg;
+                color: $primary;
+            }
+
+            svg {
+                color: $sub-title-color;
+                font-size: rem(36);
+                width: rem(36);
+            }
+        }
+    }
+}
+
+.profile-dropdown {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: rem(6);
+
+        li span {
+            width: rem(160);
+        }
+
+        li:last-child {
+            border-top: 1px solid $grey;
+        }
+    }
+    .menu-btn {
+        width: 100%;
+        text-align: start;
+        padding: rem(1) rem(5);
+        span {
+            color: $primary;
+            font-size: rem(18);
+        }
+    }
+}
+
+.notification-drawer {
+    min-width: 300px;
+
+    .ant-drawer-body {
+        padding: rem(20);
+        .notification-wapper {
+            .period {
+                font-size: rem(20);
+                font-weight: 500;
+                margin-left: rem(14);
+            }
+
+            .card {
+                margin: 0;
+                padding: rem(16);
+                cursor: pointer;
+                border: 2px solid transparent;
+
+                .header {
+                    .name {
+                        font-size: rem(18);
+                        font-weight: 600;
+                    }
+                    .time {
+                        font-size: rem(14);
+                        font-weight: 500;
+                    }
+                }
+
+                .notification {
+                    font-size: rem(20);
+                    color: #00000080;
+
+                    .text-spacer {
+                        width: 2px;
+                    }
+
+                    .notification-text {
+                        font-size: rem(17.5);
+                    }
+
+                    .highlight {
+                        color: black;
+                        font-weight: 500;
+                        font-size: rem(19);
+                    }
+                }
+
+                .action-wrapper {
+                    justify-content: flex-end;
+                }
+
+                &:hover {
+                    border: 2px solid $gray-1;
+                }
+            }
+        }
+    }
+}
