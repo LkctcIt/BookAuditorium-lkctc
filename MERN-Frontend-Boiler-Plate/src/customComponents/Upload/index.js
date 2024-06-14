@@ -13,7 +13,7 @@ const Upload = ({
     showUploadList = false,
     multiple,
     aspectRatio,
-    maxFileSize = 5,
+    maxFileSize = 50,
     className = "",
     beforeUpload,
 }) => {

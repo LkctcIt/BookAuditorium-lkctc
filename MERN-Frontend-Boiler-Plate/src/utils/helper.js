@@ -245,6 +245,7 @@ export const isIncluded = (searchString, searchWithIn, strict = false) =>
 
 export const isFileSizeExceeded = (file, maxFileSizeMb = 5, showError) => {
     const fileSizeMb = file.size / 1000000
+    console.log("fileSizeMB", fileSizeMb)
     if (fileSizeMb > maxFileSizeMb) {
         if (showError) message.error(`Max File Size Exceeded : ${maxFileSizeMb} MB`)
         return true
