@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore"
 import { getStorage } from "firebase/storage"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyARJioZucAmoleDd5EFAEDA2DQ4NbBHy9Y",
-    authDomain: "bookauditorium.firebaseapp.com",
-    projectId: "bookauditorium",
-    storageBucket: "bookauditorium.appspot.com",
-    messagingSenderId: "689491447111",
-    appId: "1:689491447111:web:38ed3970e86167b9eb9062",
+    apiKey: "AIzaSyBNNx0F5m_GwxIfREUYymeSBrUO_XdCG9U",
+    authDomain: "bookauditorium-3ed57.firebaseapp.com",
+    projectId: "bookauditorium-3ed57",
+    storageBucket: "bookauditorium-3ed57.appspot.com",
+    messagingSenderId: "31695704175",
+    appId: "1:31695704175:web:88b12a5e668be316f37d9a",
 }
 
 const firebaseApp = initializeApp(firebaseConfig)
