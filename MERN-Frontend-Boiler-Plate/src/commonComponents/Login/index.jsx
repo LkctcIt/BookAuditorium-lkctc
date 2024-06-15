@@ -99,7 +99,7 @@ const Login = () => {
                     </Form>
                     <Divider className="m-0" />
                     <div className="toggle-auth-action">
-                        Don't have an account ?<Typography.Link onClick={onSignup}>Create account</Typography.Link>
+                        Don't have an account ?<Typography.Link onClick={() => navigate("/signup")}>Create account</Typography.Link>
                     </div>
                 </div>
             )}
