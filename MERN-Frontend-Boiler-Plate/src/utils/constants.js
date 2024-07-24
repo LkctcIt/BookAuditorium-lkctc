@@ -44,7 +44,15 @@ export const Weight = Object.freeze({
 export const Departments = Object.freeze({
     it: "Information Technology",
     management: "Management",
-    other: "Other",
+    cse:"Engineering - CSE",
+    ce:"Engineering - CE",
+    ece:"Engineering - ECE",
+    me:"Engineering - ME",
+    pharmacy: "Pharmacy",
+    mls: "Paramedical Science",
+    hm: "Hotel Management",
+    committee: "Committee",
+    other:"other"
 })
 
 export const Occasions = Object.freeze({

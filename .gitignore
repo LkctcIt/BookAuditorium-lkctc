@@ -6,6 +6,7 @@ build
 
 # misc
 .env
+.env.local
 logs
 *.log
 *.lock
