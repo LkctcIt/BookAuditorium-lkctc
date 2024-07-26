@@ -322,7 +322,7 @@ const AllAuditoriumsTab = () => {
                                     {/*Title*/}
                                     <Form.Item
                                         required={true}
-                                        label="Title:"
+                                        label="Name of event name"
                                         name="title"
                                         rules={[{ required: true, message: "Please enter title" }]}
                                     >

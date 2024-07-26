@@ -219,7 +219,7 @@ const AuditoriumPage = () => {
                                         {/*Title*/}
                                         <Form.Item
                                             required={false}
-                                            label="Title:"
+                                            label="Name of the event:"
                                             name="title"
                                             rules={[{ required: true, message: "Title is required" }]}
                                         >
@@ -274,10 +274,10 @@ const AuditoriumPage = () => {
                                         <Form.Item
                                             required={false}
                                             name="department"
-                                            label="Department:"
+                                            label="Department/Committee"
                                             rules={[{ required: true, message: "Department is required" }]}
                                         >
-                                            <Select
+                                            {/* <Select
                                                 allowClear
                                                 placeholder="Select department"
                                                 options={Object?.keys(Departments)?.map((key) => {
@@ -285,7 +285,8 @@ const AuditoriumPage = () => {
                                                 })}
                                                 suffixIcon={<BiChevronDown />}
                                                 showSearch
-                                            />
+                                            /> */}
+                                            <Input placeholder="Enter Department/Committee" required/>
                                         </Form.Item>
                                         {/*Lab assistant*/}
                                         <Form.Item required={false} name="staff" label="Lab assistant:">
