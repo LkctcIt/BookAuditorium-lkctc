@@ -27,7 +27,7 @@ const bookingSchema = new mongoose.Schema(
 
       
 
-        department: { type: String, enum: ["it", "management", "cse", "ce", "ece", "me", "pharmacy", "mls","hm", "committee",  "other"], default: "pending" },
+        department: { type: String, default: "pending" },
         bookingstatus: {
             type: String,
             enum: [BookingStatus.APPROVED, BookingStatus.CANCELLED, BookingStatus.PENDING, BookingStatus.REJECTED],
